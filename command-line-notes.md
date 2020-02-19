@@ -7,28 +7,26 @@
 
 **Chapter 2 - Regular expressions. A language for search and replace.**
 
-- useful table: Table 2. Some common wildcards
-
- Search term and meaning
+- useful table: Table 2. Some common wildcards (search term and meaning)
  
- \w a word character including letters, numbers and the underscore
+ > \w a word character including letters, numbers and the underscore
  
- \t a tab character
+ > \t a tab character
  
- \s a white space including space, tabs and end of line
+ > \s a white space including space, tabs and end of line
  
- \r \n end of line marker, depending on the program you're using (R uses \n)
+ > \r \n end of line marker, depending on the program you're using (R uses \n)
  
- \d a digit from 0 to 9
+ > \d a digit from 0 to 9
  
- . any letter number or symbol except end of line characters
+ > . any letter number or symbol except end of line characters
  
- note: the slash \ is used to tell the search engine that the following command is not literal, i.e., using w and not \w will search for the letter w.
+ *note: the slash \ is used to tell the search engine that the following command is not literal, i.e., using w and not \w will search for the letter w.*
  
 **Chapter 3 - practicing reg expressions**
 
 
-## Shell commands (compilation: PCFB book (chapters 7 and 16), Software Carpentry, Open Classrooms - Command Line in Terminal course, Ubuntu Tutorials - The Linux command Line for beginners).
+## Shell commands (compilation notes from: PCFB book (chapters 7 and 16), Software Carpentry, Open Classrooms - Command Line in Terminal course, Ubuntu Tutorials - The Linux command Line for beginners).
 
 Terminal is in Applications > Utilities
 
@@ -38,7 +36,7 @@ Ctrl-alt-d opens the terminal
 
 Ctrl-d logout
 
-**Commands**
+## **Commands**
 
 pwd where are you now
 
@@ -63,17 +61,17 @@ Option cursor position takes you to where the cursor is pointing
 Control u wipes out the whole command line
 
 
-**Mkdir**
+## **Mkdir**
 
 Mkdir creates one or more folders in the directory you're in.
 
 Tips to naming a folder - don't use spaces; if you do use spaces or any other special character, either (1) wrap the whole name in quotations or (2) escape the special character or (3) do both quotations and escape
 
-**Usage: mkdir myfolder or mkdir "my folder" or mkdir my\ folder or mkdir "my\ folder"**
+> **Usage: mkdir myfolder or mkdir "my folder" or mkdir my\ folder or mkdir "my\ folder"**
 
 Mkdir can be used to make more than one folder at the same time inside the directory you're in - list more than one name separated by spaces, without quotations so the terminal understands it's more than one folder. This is creating folders inside the working directory, not inside each other (myfolder2 is not created inside myfolder1).
 
-**Usage: mkdir myfolder1 myfolder2 myfolder3**
+> **Usage: mkdir myfolder1 myfolder2 myfolder3**
 
 Mkdir can create a folder with new folders inside it (a nested directory) in the directory you're in when the flag -p and / are used in combination
 
