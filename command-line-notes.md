@@ -302,7 +302,9 @@ grep followed by $(); usage(example): grep 'chlorophyll' $(find . -name "*.dat")
 the line above will search for and list (grep) filenames (-name) containing the word 'chlorophyll' from a list of .dat files ("*.dat") found (find) in the current directory (.); grep could be replaced by wc and the command will instead count and spit out the number of adjacent the filenames containing the word 'chlorophyll' instead of listing them. To count them all (not only the adjacent ones), do 
 wc -l $(find . -name "*.dat") | sort -n
 
-cut will extract (not eliminate or cut off) columns of interest; if columns are delimited by special characters other than tab, you need to specify the delimiter; you also need to specify the column(s) you are interested in extracting;
+## Extract table columns
+
+cut will isolate/extract (not eliminate or cut off) columns of interest from the rest of the table; if columns are delimited by special characters other than tab, you need to specify the delimiter; you also need to specify the column(s) you are interested in extracting;
 
 > **usage: cut -d "," -f 2,3,4**
 
