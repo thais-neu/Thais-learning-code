@@ -240,6 +240,8 @@ rm -i is the interactive option that will ask you to confirm you want to delete 
 
 ## **Other commands**
 
+ls -l will show the permissions for each file in a folder
+
 wc counts; 
 
 > usage wc - l (will spit out the number of lines in a file)
