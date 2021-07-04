@@ -52,6 +52,8 @@ conda config --add channels conda-forge
 
 To check on the steps above, look in your home dir (maybe using globus) and you should see a folder "Miniconda3" and a file "Miniconda3-latest-Linux-x86_64.sh". If no errors come up and you see this folder and file, it should have worked fine.
 
+Steps 3.1, 3.2, 3.3 and 3.4 above (install Bioconda, update Bioconda, add channels) need to be done only once.
+
 3.4) Create envs (environments) and install tools using the following commands. The example environment here is `lotterhos_utils`
 
 Create a conda env to use packages inside lotterhos_utils by typing `conda create -n lotterhos_utils` **this did not work for me**
@@ -62,19 +64,26 @@ Instead, I had to dowload the lotterhos_utils.yml file. To do that, I did:
 - click 'raw' on top right then copy the path from the browser (https://raw.githubusercontent.com/northeastern-rc/lotterhos_group/main/env_yml_files/lotterhos_utils.yml?token=AMO6NTJVYDEMXUA3B2I3QQDA4NVEC)
 
 - then open your local terminal, navigate to a Documents folder of your choice, and type `curl -O` plus paste the path to the raw file. Full command looks like:
-https://raw.githubusercontent.com/northeastern-rc/lotterhos_group/main/env_yml_files/lotterhos_utils.yml?token=AMO6NTJVYDEMXUA3B2I3QQDA4NVEC
+
+`curl -O https://raw.githubusercontent.com/northeastern-rc/lotterhos_group/main/env_yml_files/lotterhos_utils.yml?token=AMO6NTJVYDEMXUA3B2I3QQDA4NVEC`
 
 - then upload the file to your home dir (or a folder of your choice inside it) using Globus.
 
 Check that the file inside your home dir is about the same size as the file in Github.
 
-Steps 3.1, 3.2, 3.3 and 3.4 above (install, update, add channels, create) - you should only have to do this once (create once for each environment).
+Steps 3.4 above you should only have to do this once **per environment**.
 
-### 4) Activate the env: type `conda activate lotterhos_utils`
+### 4) Activate the environment to use it: 
+
+Type `conda activate lotterhos_utils`
+
 Install required tools in your activated env: conda install -y vcftools plink
+
 Update the tools as required: conda update vcftools plink
 
-### 5) type the desired command, in this example we will:
+You'll need to activate the environment each time you want to use the environment.
+
+### 5) Type the desired command, in this example we will:
 
 a) Transform the vcf format into a tped plink format
 
