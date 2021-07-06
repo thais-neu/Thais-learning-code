@@ -77,9 +77,9 @@ Steps 3.4 above you should only have to do this once **per environment**.
 
 Type `conda activate lotterhos_utils`
 
-Install required tools in your activated env: conda install -y vcftools plink
+Install required tools in your activated env: `conda install -y vcftools plink`
 
-Update the tools as required: conda update vcftools plink
+Update the tools as required: `conda update vcftools plink`
 
 You'll need to activate the environment each time you want to use the environment.
 
