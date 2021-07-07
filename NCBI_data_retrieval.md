@@ -52,4 +52,4 @@ Use Discovery.
 
 Login to discovery. SRA toolkit is an available module in the Lotterhos cluster.
 
-*Here, I downloaded, installed and configured the SRA toolkit on my desktop and used it to download the SRA files to my desktop, then I uploaded the files to Discovery through Globus (see below). But the  SRA toolkit is available on Discovery so should be able to get it from NCBI directly to Discovery folder.*
+*Here, I downloaded, installed and configured the SRA toolkit on my desktop and used it to download the SRA files to my desktop, then I uploaded the files to Discovery through Globus. But the  SRA toolkit is available on Discovery so should be able to get it from NCBI directly to Discovery folder.*
