@@ -1,0 +1,47 @@
+Extracting the FASTQ files from SRA files
+
+You will need: SRA toolkit installed and configured - should already be ready to go if you used the toolkit to download the SRA files.
+
+*Option 1.*
+
+You can do that in your local desk- or laptop but this option is not great because these files are large and you will need to work with them on Discovery anyways to proceed with the pipeline. So if possible, option 2 is best – do it directly on Discovery.
+
+*Option 2.*
+
+Using the SRA toolkit in the Lotterhos node.
+
+In terminal, login if you have not yet. 
+
+Check which packages are available in the Lotterhos module: 
+
+`module show lotterhos/2020-07-21`
+
+> This will show you a list of available packages
+
+then load the one you need to use:
+
+`module load sratoolkit/2.10.8`
+
+If the toolkit has not been configured, you will get a message in terminal to do so. Follow the instructions to configure (they are the same instructions as the one you followed to configure the toolkit on your local computer) – github.com/ncbi/sra-tools/wiki/03.-Qiocl-Toolkit-Configuration
+
+Once configured, go to terminal and type: 
+
+`Fasterq-dump –split-files filename.sra`
+
+To extract one file. Or to extract all sra files, type:
+
+`Fasterq-dump –split-files \*.sra`
+
+> This will create two FASTQ files for each SRA file (because the sequencing was pair-ended, so you get the forward and the reverse reads in two separate FASTQ files, labeled FASTQ1 and FASTQ2). For each file name, you will end up with 3 files: the 'original' SRA file, one .sra_1.fastq and one .sra_2.fastq file.
+
+**Now that we have the FASTQ files, we will start using the pipeline described in Ddocent to process the data.**
+
+As mentioned before, it is best to work from the scratch folder. So copy the fastq files from the home folder to the scratch folder. In Globus > File Manager, open two panels (top right corner):
+
+one for the home folder where the fastq files are located: click the search box and select northeastern#discovery (you might need to re-authenticate) and in the path box type /~/ (the home folder), then navigate to where fastq files are; 
+
+and one for your scratch folder: click the search box and select northeastern#discovery (you might need to re-authenticate) and in the path box, type /scratch/tbittar/ (the scratch folder), then naviate to where you will copy the fastq files to.
+
+Drag and drop the fastq files from home to scratch.
+
+**Tip**: Bookmark these folders to make it easier to find them in the future in Globus > Bookmarks list (left side panel).
