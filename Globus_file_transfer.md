@@ -37,3 +37,5 @@ With the origin and destination folders open in each panel, drag and drop the fi
 **Tip:** Look at “Activity” (left menu) or hit “refresh list” (on the panel corresponding to destination folder) to check progress of transfer.
 
 **Now that all files are in the destination folder, you can close the origin panel.**
+
+**Tip**: Bookmark your home and scratch folders to make it easier to find them in the future in Globus > Bookmarks list (left side panel).
