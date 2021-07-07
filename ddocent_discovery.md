@@ -8,7 +8,7 @@ Use dDocent pipeline on Discovery
 
 ## The files need to be in the following format: PopID_filename.F.fq.gz and PopID_filename.R.fq.gz
 
-# 1 Rename files to comply with the above naming convention required:
+# 1) Rename files to comply with the above naming convention required:
 
 > My fastq files came out of NCBI in the following format: SRRxxxxxxxx.sra_1.fastq (forward reads) and SRRxxxxxxxx.sra_2.fastq (reverse reads).
 
@@ -68,7 +68,7 @@ done
 
 **Tip:** Keep the scratch folder open in Globus and use Refresh List to double-check that the file names are changing as expected and that the new files are smaller in size (because they are now compressed).
 
-# 2 Load the module where dDocent is nested.
+# 2) Load the module where dDocent is nested.
 
 Login to Discovery and request resources using the lotterhos partition.
 
