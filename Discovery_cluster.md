@@ -7,7 +7,7 @@ Globus - used as an interface to upload files and check that new files are being
 
 ### 1) Access
 
-### Access: ways to access/log into the Discovery cluster (assuming you already have access granted by Research Compupting).
+### Access: ways to access/log into the Discovery cluster (assuming you already have an account set up and access granted by Dr. KLo and Research Computing).
 
 a) On your browser type ood.discovery.neu.edu - go to Clusters - Discovery Shell Access - enter PW
 
