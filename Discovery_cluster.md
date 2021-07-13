@@ -106,3 +106,5 @@ Results: several warnings (ask Katie); "unrecognized value sused for CHROM: NC_0
 b) Then transform the plink format to a raw format by re-running the following command on your terminal.
 
 Step 2: plink --tped yournameoffile.tped --tfam yournameoffile.tfam --recodeA --out yournameoffile
+
+--
