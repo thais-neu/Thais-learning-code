@@ -29,6 +29,10 @@ b) `srun -p lotterhos -N 1 --pty /bin/bash` this gives 24h to work (only for use
 
 When successful, you'll see a message saying "job ##### has been allocated resources" and base will change to [tbittar\@d3037 \~], where @3037 is the node being used.
 
+or
+
+c) `srun --partition=short --pty --export=ALL --nodes=1 --ntasks=1 --mem=10Gb --time=00:59:00 /bin/bash` this gives 59 min but you can change that to however long needed; other settings can be adjusted as well; this partition (like debug) is shared.
+
 ### 3) Creating working environments (this is mainly copied from the Lotterhos Wiki page, with my notes added).
 
 > Steps 3.1, 3.2, 3.3 (install Bioconda, update Bioconda, add channels) need to be done only once; if this is already done, skip to step 4 to activate the environment.
